@@ -4,7 +4,8 @@
   "description": "a backend with graphql as the server",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "nodemon app.js",
+    "json:server": "json-server --watch data.json"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,11 @@
   },
   "homepage": "https://github.com/karann7/graphql-backend#readme",
   "dependencies": {
+    "axios": "^0.16.2",
     "express": "^4.15.3",
     "express-graphql": "^0.6.7",
-    "graphql": "^0.10.5"
+    "graphql": "^0.10.5",
+    "json-server": "^0.11.2"
   },
   "devDependencies": {
     "nodemon": "^1.11.0"
